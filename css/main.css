@@ -192,10 +192,10 @@ footer{
 .contact li{
   padding:10px;
 }
-#fb::before,
-#mail::before,
-#git::before,
-#px::before{
+#fb:before,
+#mail:before,
+#git:before,
+#px:before{
     background-size: 15px 15px;
     display: inline-block;
     width: 15px; 
@@ -203,7 +203,7 @@ footer{
     content:"";
   margin-right: 5px;
 }
-#fb::before{
+#fb:before{
   background-image: url('assets/fb.png');
 }
 #mail:before{
@@ -211,10 +211,10 @@ footer{
   background-size: 15px 10px;
   height:10px;
 }
-#git::before{
+#git:before{
   background-image: url('assets/git.png');
 }
-#px::before{
+#px:before{
   background-image: url('assets/px.png');
   background-size: 15px 18px;
   height:18px;
