@@ -204,7 +204,7 @@ footer{
     margin-right: 5px;
 }
 #fb::before{
-  background-image: url('assets/Val.jpg');
+  background-image: url('assets/fb.png');
 }
 #mail::before{
   background-image: url('assets/mail.png');
