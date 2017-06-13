@@ -1,96 +1,252 @@
-body{
-  font-family:Avenir;
-  background-color:#ebebeb;
+body {
+  margin: 0;
+  background-color: #83AFC8;
+  box-sizing:border-box;
 }
-a{
-  height:20px;
-  background-color:steelblue;
-  color:white;
-  text-decoration:none;
-  padding:5px;
-  border-radius:5%;
+/*Fonts*/
+.sans {
+  font-family: 'Montserrat', sans-serif;
 }
-a:hover{
-  background-color:gray;
+.serif {
+  font-family: 'Playfair Display', serif;
 }
 
-h1{
-  color:black;
-  font-family: 'Lora', serif;
+/*Navigation*/
+nav {
+  margin: 10px;
+  color: white;
+  flex-flow: row nowrap;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
 }
-.about-me{
+ul {
+  margin-left:-20px;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items:baseline;
+}
+#title::before{
+  content:"";
   display:inline-block;
+  transform: rotate(110deg);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 0 0 dimgray;
 }
-h2,h3{
-  color:#636;
-  font-family: 'Lora', serif;
+li {
+  margin-right: 5%;
 }
-h2{
-  display:inline;
+a:link {
+  color: dimgray;
 }
-.profile{
-  margin: 2px 6px;
-  float:right;
-  display:inline;
-  max-width:210px;
-  border-radius:20%;
-  
+a:hover {
+  color: white;
 }
-.profile:hover{
-  box-shadow: 0 0 2px 1px;
+a:visited {
+  color: black;
 }
-.book{
-  width:150px;
-  box-shadow: 0 0 2px 1px;
+.line {
+  position: relative;
 }
-.movie-container{
-  display:inline-block;
-  margin:10px;
-  max-width:30%;
-  height:400px;
+.top {
+  margin: 0 auto;
+  top: -8px;
+  background-color: #333;
+  height: 1px;
+  width: 95%;
 }
-.movie-image{
-  box-shadow: 0 0 .5px .5px;
-  float:left;
-  max-width:120px;
-  margin-right:10px
+/*Bio*/
+.about {
+  position: relative;
+  margin: 0 auto;
+  width: 700px;
+  height: 373px;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
-.movie-link{
-  float:right;
+h1 {
+  color: #333;
+  margin-top: -15px;
+  font-size: 64px;
+  text-transform: uppercase;
+  text-align: center;
 }
-.movie-text{
- font-size:.8em;
- display: inline-block;
- vertical-align: text-top;
+.me {
+  margin: 0 auto;
+  top: -35px;
+  background-color: white;
+  height: 2px;
+  width: 100px;
+}
+.profile {
+  position: absolute;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  max-width: 180px;
+  left: 20px;
+  bottom: 15%;
+}
+.bio {
+  position: absolute;
+  padding: 0 15px;
+  top: 100px;
+  left: 210px;
+  float: left;
+}
+#pointer {
+  position: absolute;
+  right: 50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 38px solid #83AFC8;
+}
+/*Movie Boxes*/
+.wave {
+  position:relative;
+  background: #000
+    url("https://i0.wp.com/www.dargadgetz.com/wp-content/uploads/2013/09/rolling-waves.jpg")
+    no-repeat
+/*fixed*/
+    center;
+  background-size: cover;
+  max-width: 100%;
+  height: 1000px;
+}
+h3 {
+  padding: 45px 40px 0;
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing:2.5px;
+}
+.sub {
+  left:65px;
+  top: -25px;
+  background-color: #5FA7D0;
+  height: 2px;
+  width: 130px;
+}
+
+.movie {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.book-container,
+.movie-container {
+  margin: 10px;
+  max-width: 350px;
+  height: 250px;
+  background-color: rgba(189, 189, 189, 0.5);
+  padding: 10px;
+}
+h2 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: right;
+}
+.book-image,
+.movie-image {
+  float: right;
+  width: 135px;
+  height: 204px;
+  margin-right: 10px;
+  padding: 20px 5px 0 25px;
+}
+.book-text,
+.movie-text {
+  font-size: 14px;
+  padding: 10px;
+  text-align: right;
 }
 .book-container{
-  margin-top:80px;
-  height:400px;
+  margin:0 auto;
+  margin-bottom:60px;
+}
+.book-title{
+  font-size:20px;
+}
+h4{
+  text-align:center;
+  letter-spacing:1.5px;
+}
+footer{
+  position: absolute;
+  width:100%;
+  bottom:0;
+  background-color:rgba(33,96,132,.5);
+  color:white;
+}
+.contact{
+  margin:0 auto;
+  max-width:95%;
+  flex-wrap:nowrap;
+  align-content:baseline;
+  font-size:12px;
+}
+.contact li{
+  padding:10px;
+}
+#fb::before,
+#mail::before,
+#git::before,
+#px::before{
+  content:url(25231.png);
+  background-color:dimgray;
+  display:inline-block;
+  margin-right:5px;
+  width:15px;
+  height:15px;
 }
 
-@media(max-width:720px){
-  .movie-container{
-    display:block;
-    height:340px;
-    max-width:90%
+/*Media Queries*/
+@media(max-width:1170px){
+  .wave{
+    height:1300px;
   }
 }
-@media(max-width:500px){
-  .movie-image{
-    max-width:90px;
+@media(max-width:780px){
+  .wave{
+    height:1700px;
   }
-}
-@media(max-width:310px){
-  .movie-container{
-    height:450px;
+  .contact{
+    flex-direction:column;
   }
-  .book-container{
-    margin-top:100px;
-  }
-}
 
-@media(max-width:290px){
-  .movie-container{
-    height:400px;
+}
+@media (max-width: 700px) {
+  .about {
+    margin-top:30px;
+    margin-bottom:20px;
+    max-width: 400px;
+    height: 320px;
+  }
+  .profile {
+    max-width: 100px;
+    bottom: 25%;
+  }
+  .bio {
+    top: 70px;
+    font-size: 12px;
+    left: 130px;
+  }
+  h1 {
+    font-size: 52px;
+  }
+  #pointer {
+    right: 30px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 25px solid #83AFC8;
+  }
+}
+@media (max-width: 455px) {
+  .wave{
+    height:1750px;
   }
 }
