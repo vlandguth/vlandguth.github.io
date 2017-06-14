@@ -204,18 +204,18 @@ footer{
     margin-right: 5px;
 }
 #fb::before{
-  background-image: url("assets/fb.png");
+  background-image:(../assets/fb.png);
 }
 #mail::before{
-  background-image:'assets/mail.png';
+  background-image:(../assets/mail.png);
   background-size: 15px 10px;
   height:10px;
 }
 #git::before{
-  background-image:'assets/git.png';
+  background-image:(../assets/git.png);
 }
 #px::before{
-  background-image:'assets/px.png';
+  background-image:(../assets/px.png);
   background-size: 15px 18px;
   height:18px;
 }
