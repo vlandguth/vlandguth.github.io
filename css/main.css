@@ -49,10 +49,6 @@ a:hover {
 a:visited {
   color: black;
 }
-$('a').hover(function () {
-  $(this).addClass('magictime puffIn');
-});
-
 .line {
   position: relative;
 }
