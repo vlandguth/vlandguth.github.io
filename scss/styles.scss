@@ -49,11 +49,24 @@ h2{
   width: 100px;
 }
 
-.face {
-  border-radius: 50%;
-  max-width: 180px;
+#val{
+    margin-right:10px;
+    display:inline;
+    max-width:120px;
+    max-height:120px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+.bio{
+    margin: 0 auto;
+    max-width:80%;
+    display:flex;
+    flex-direction:row;
 }
 
+.uk-grid-small{
+    margin:0 auto;
+}
 //Footer - Contact Info
 footer{
     margin-top:100px;
