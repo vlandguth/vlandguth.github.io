@@ -4,12 +4,8 @@
 @import "uikit.min";
 @import "uikit-rtl.min";
 
-p, .lg-sub-html, #lg-counter-all, h3{
+h1, h2, p, .lg-sub-html, #lg-counter-all, h3{
   font-family: 'Montserrat', sans-serif; 
-}
-
-h1, h2{
-    font-family: 'Playfair Display', serif;
 }
 
 body{
@@ -26,7 +22,6 @@ header{
  
 h1{
     font-size: 48px;
-    text-transform: uppercase;
     text-align: center;
     padding-top: 80px;
 }
@@ -52,6 +47,11 @@ h2{
   background-color: whitesmoke;
   height: 2px;
   width: 100px;
+}
+
+.face {
+  border-radius: 50%;
+  max-width: 180px;
 }
 
 //Footer - Contact Info
@@ -105,6 +105,17 @@ footer p{
 }
 
 //Layout
+.skills{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.skills li{
+    list-style-type: none;
+    margin: 0px, 10px;
+    max-width:100px;
+}
+
 figure{
     display:flex;
     text-align: center;
