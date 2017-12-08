@@ -94,9 +94,13 @@ a.uk-icon:hover{
 }
 
 .countdown{
-    margin-top:15px;
-    margin-left:50px;
+    margin: 0 auto;
+    padding-top:15px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.uk-countdown-number{
+    font-size:62px;
 }
 
 //Footer - Contact Info
@@ -154,7 +158,9 @@ footer p{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
+
 .skills li{
     list-style-type: none;
     margin: 0px, 10px;
