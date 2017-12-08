@@ -13,12 +13,24 @@ h1, h2, p, .lg-sub-html, #lg-counter-all, h3{
     padding: 0 40px;
 }
 
-uk-navbar-nav>li>a{
+.uk-navbar-nav>li>a{
     color:whitesmoke;
 }
 
 body{
     background:url("https://www.toptal.com/designers/subtlepatterns/patterns/spiration-light.png");
+}
+
+.uk-navbar-left img{
+    max-width:18px;
+    margin-right:3px;
+}
+
+.uk-navbar-left{
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-size:.875rem;
+    
 }
 
 // Header
@@ -34,6 +46,8 @@ h1{
     text-align: center;
     padding-top: 80px;
 }
+
+
 
 h2{
     margin-left:50px;
