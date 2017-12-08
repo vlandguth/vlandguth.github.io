@@ -8,6 +8,15 @@ h1, h2, p, .lg-sub-html, #lg-counter-all, h3{
   font-family: 'Montserrat', sans-serif; 
 }
 
+.uk-navbar-container:not(.uk-navbar-transparent){
+    background: #83AFC8;
+    padding: 0 40px;
+}
+
+uk-navbar-nav>li>a{
+    color:whitesmoke;
+}
+
 body{
     background:url("https://www.toptal.com/designers/subtlepatterns/patterns/spiration-light.png");
 }
@@ -32,7 +41,7 @@ h2{
 
 #pointer {
     position: absolute;
-    bottom: 472px;
+    bottom: 400px;
     right: 50px;
     width: 0;
     height: 0;
@@ -66,6 +75,7 @@ h2{
 
 .uk-small-grid{
     font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 
 
@@ -173,4 +183,16 @@ main{
   .contact{
     flex-direction:column;
   }
+}
+
+@media(max-width:600px){
+    .bio{
+        display:block;
+    }
+}
+
+@media(max-width:420px){
+    .uk-navbar-left{
+        display:none;
+    }
 }
