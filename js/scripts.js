@@ -11,7 +11,7 @@ var img1 = 'http://picsum.photos/200/303';
 var img2 = 'http://picsum.photos/200/302';
 
 // Show Images
-$('header img').attr('src', eval('img' + numRand) );
+$('').attr('src', eval('img' + numRand) );
 
 // Activate Gallery
 $('figure').lightGallery({

@@ -78,6 +78,26 @@ h2{
     margin: 0 auto;
 }
 
+.uk-link, a {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: default
+}
+
+uk-link, a:hover{
+    color: white;
+    text-decoration:none;
+}
+
+a.uk-icon:hover{
+    color:darkblue;
+}
+
+.countdown{
+    margin-top:15px;
+    margin-left:50px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 //Footer - Contact Info
 footer{
@@ -183,6 +203,10 @@ main{
   .contact{
     flex-direction:column;
   }
+    
+    .countdown{
+        margin-left:0px;
+    }
 }
 
 @media(max-width:600px){
