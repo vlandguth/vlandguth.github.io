@@ -108,7 +108,7 @@ a.uk-icon:hover{
 }
 
 .countdown{
-    margin: 0 auto;
+    margin: 50px;
     padding-top:15px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -150,22 +150,22 @@ footer p{
     text-align:center;
 }
 
-// Light Gallery Styling
-.lg-backdrop{
-  background: rgba(16, 0, 28, 0.8);
-}
-
-.lg-object {
-  border-radius: 3px;
-}
-
-.lg-progress-bar .lg-progress{
-    background: rebeccapurple;
-}
-
-.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover{
-    border-color:rebeccapurple;
-}
+//// Light Gallery Styling
+//.lg-backdrop{
+//  background: rgba(16, 0, 28, 0.8);
+//}
+//
+//.lg-object {
+//  border-radius: 3px;
+//}
+//
+//.lg-progress-bar .lg-progress{
+//    background: rebeccapurple;
+//}
+//
+//.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover{
+//    border-color:rebeccapurple;
+//}
 
 //Layout
 .skills{
@@ -181,57 +181,23 @@ footer p{
     max-width:100px;
 }
 
-figure{
-    display:flex;
-    text-align: center;
-    margin:0 auto;
-    width:90%;
-    display:flex;
-    justify-content: center;
-    flex-wrap:wrap;
-}
-
-figure img{
-    margin:3px;
-}
-
-figure div{
-    margin:10px;
-    padding:10px;
-    width:400px;
-}
-
-figcaption{
-    text-align: left;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-main{
-    width:90%;
-    margin:0 auto;
-}
-
-.uk-card-default{
-    background: rgba(33,96,132,.4);
-}
-
-
 // Media Queries
 
 @media(max-width:780px){
   .contact{
     flex-direction:column;
   }
-    
-    .countdown{
-        margin-left:0px;
-    }
 }
 
 @media(max-width:600px){
     .bio{
         display:block;
+    }
+}
+
+@media(max-width:650px){
+    .uk-countdown-number{
+        font-size:40px;
     }
 }
 
