@@ -1,0 +1,32 @@
+{% include head.html %}
+  {% include header.html %}
+
+<div class="welcome">
+        <h1>Valerie is a <span class="type-it"></span></h1>
+        <div class="shooting-stars"></div>
+            <div id="particles-js">
+            </div>
+            <svg class="moon" viewBox="0 0 82 89">
+                <path d="M44.65317104.21580175c5.6121412.94096284 11.1306799 2.96016431 16.2528904 6.16087667 20.92908442 13.07204752 27.28954139 40.63478692 14.21325362 61.56122174-13.07416809 20.92304263-40.63775465 27.29240366-61.5652493 14.21781199-5.1222105-3.20071236-9.35357532-7.27982266-12.6628992-11.9041765 17.29890847 2.90552488 35.44462772-4.57192108 45.32073305-20.37699345 9.87398565-15.80168017 8.6401098-35.38884115-1.55872857-49.65874045z"/>
+              </svg>
+            <svg class="arrow" viewBox="0 0 180 74"> <path fill="#D8D8D8" fill-rule="evenodd" d="M89.781609 57.644667L172.106725 0l7.456494 10.648977-88.831035 62.20016-.625459.893248-.325116-.227649-.325115.227649-.625459-.893248L0 10.648977 7.456494 0l82.325115 57.644667z"/> </svg>
+        </div>
+      
+      <h1>Portfolio</h1>
+      <main class="work">
+      
+        {% for work in site.portfolio %}
+        <a href="{{ work.url }}">
+          <section class="card">
+            <div class="grow">
+              <img src="{{ work.cover-image }}" alt="{{ work.title }}">
+            </div> 
+            <h4>{{ work.title }}</h4> 
+          </section>
+        </a>
+        {% endfor %}
+        
+      </main>
+
+  {% include footer.html %}
+  {% include scripts.html %}

@@ -1,0 +1,20 @@
+{% include head.html %}
+{% include header.html %}
+<h1>{{ page.title }}</h1>  
+    {{content}}
+
+<main class="shop"> 
+    <div id="gallery">
+{% for post in site.posts %}
+  <a href="{{ post.link-image }}">
+        <section class="card" id="sticker">
+          <div class="grow">
+            <img src="{{ post.gallery-image }}" alt="">
+          </div> 
+        </section>
+      </a>
+{% endfor %}
+</div>
+</main>
+{% include footer.html %}
+{% include scripts.html %}

@@ -1,94 +1,32 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width">
+---
+layout: default
+---
 
-  <title>Valerie Landguth</title>
- 
-<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-   
- <link rel="stylesheet" href="css/styles.css">	
-</head>
+<div class="welcome">
+    <h1>Valerie is a <span class="type-it"></span></h1>
+    <div class="shooting-stars"></div>
+        <div id="particles-js">
+        </div>
+        <svg class="moon" viewBox="0 0 82 89">
+            <path d="M44.65317104.21580175c5.6121412.94096284 11.1306799 2.96016431 16.2528904 6.16087667 20.92908442 13.07204752 27.28954139 40.63478692 14.21325362 61.56122174-13.07416809 20.92304263-40.63775465 27.29240366-61.5652493 14.21781199-5.1222105-3.20071236-9.35357532-7.27982266-12.6628992-11.9041765 17.29890847 2.90552488 35.44462772-4.57192108 45.32073305-20.37699345 9.87398565-15.80168017 8.6401098-35.38884115-1.55872857-49.65874045z"/>
+          </svg>
+        <svg class="arrow" viewBox="0 0 180 74"> <path fill="#D8D8D8" fill-rule="evenodd" d="M89.781609 57.644667L172.106725 0l7.456494 10.648977-88.831035 62.20016-.625459.893248-.325116-.227649-.325115.227649-.625459-.893248L0 10.648977 7.456494 0l82.325115 57.644667z"/> </svg>
+    </div>
 
-<body class="portfolio">
-   <nav class= "uk-navbar uk-navbar-container"> 
-      <div class="uk-navbar-left"><img src="img/favicons/android-chrome-192x192.png" alt="moon"><a>Valerie Landguth</a></div> 
-       <ul class= "uk-navbar-nav uk-navbar-right">
-        <li class="uk-active"><a href="vlandguth.github.io">About Me</a></li>
-        <li><a href="/stand-alone-portfolio">Portfolio</a></li>
-      </ul>
-      </nav>
-      
-    <header>
-      <h1 class="type-it">Hi, I am Valerie Landguth</h1>
-      <div class="line me"></div>
-      <div id="pointer"></div>
-    </header>
-    
-<main>
-   <h2>About Me</h2>
-   <div class="bio">
-   <img id="val" src="img/val.jpg" alt="Valerie">
-   <p>I am Visual Communication Design Major at Eastern Washington University who is excited about User Exerience Design and Interaction Design. I am planning on graduating after Fall 2018 and will be looking for a UX Designer position or a Website Design position. I am from Woodinville, Washington and I am currently attending school in Cheney,  Washington. When I am not in school, I love to spend time near Lake Washington, relaxing and taking photos. </p> 
-   </div>
-   
-   <h2>Skills</h2>
-   <ul class= "skills">
-   <li><img src="img/skills/ai.png" alt="illustrator"></li>
-   <li><img src="img/skills/ps.png" alt="photoshop"></li>
-   <li><img src="img/skills/id.png" alt="indesign"></li>
-   <li><img src="img/skills/sketch.png" alt="sketchapp"></li>
-      </ul>
-       
-   <h2>Countdown to Graduation</h2>
- <div class=" countdown uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2018-12-07T02:46:50+00:00">
-    <div>
-        <div class="uk-countdown-number uk-countdown-days"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Days</div>
-    </div>
-    <div class="uk-countdown-separator">:</div>
-    <div>
-        <div class="uk-countdown-number uk-countdown-hours"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Hours</div>
-    </div>
-    <div class="uk-countdown-separator">:</div>
-    <div>
-        <div class="uk-countdown-number uk-countdown-minutes"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Minutes</div>
-    </div>
-    <div class="uk-countdown-separator">:</div>
-    <div>
-        <div class="uk-countdown-number uk-countdown-seconds"></div>
-        <div class="uk-countdown-label uk-margin-small uk-text-center uk-visible@s">Seconds</div>
-    </div>
-</div>
-   
+<h1>Portfolio</h1>
+<main class="work">
+
+  {% for work in site.portfolio %}
+  <a href="{{ work.url }}">
+    <section class="card">
+      <div class="grow">
+        <img src="{{ work.cover-image }}" alt="{{ work.title }}">
+      </div> 
+      <h4>{{ work.title }}</h4> 
+    </section>
+  </a>
+  {% endfor %}
+  
 </main>
 
-<footer>
-    <ul class="contact">
-    <li id="linked"><a href="https://www.linkedin.com/in/valerie-landguth-0b05a3136/" target="_top" uk-icon="icon: linkedin"></a>Valerie Landguth</li>
-    <li id="git"><a href="https://github.com/vlandguth" target="_top" uk-icon="icon: github"></a>vlandguth</li>
-    <li id="pen"><a href="https://codepen.io/vlandguth" target="_top" uk-icon="icon: pencil"></a>codepen: vlandguth</li>
-    <li id="mail"><a href="mailto:valerie.landguth@gmail.com" target="_top" uk-icon="icon: mail"></a>valerie.landguth@gmail.com</li>
-    </ul>
-    <p>© Valerie Landguth 2017 </p>
-</footer>
 
-
-<!-- Scripts -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="js/lightgallery.min.js"></script>
- <script src="js/uikit.min.js"></script>
- <script src="js/uikit-icons.min.js"></script>
- <script src="js/typeitout.min.js"></script>
- <script src="js/scripts.js"></script>
-
-</body>
-</html>

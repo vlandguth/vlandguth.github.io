@@ -1,0 +1,18 @@
+<header class='sticky-header'>
+    <nav><ul>
+      {% for page in site.pages limit:3 %}
+      {% if page.category contains 'myPage' %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      <a href="{{ site.url }}"><img src="/assets/img/favicon/android-chrome-256x256.png" alt="Logo"></a>
+      {% for page in site.pages offset:3 %}
+      {% if page.category contains 'myPage' %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      </ul></nav>
+    </header>
+
+
+    

@@ -1,0 +1,33 @@
+{% include head.html %}
+{% include header.html %}
+
+<h1>{{ page.title }}</h1>
+<main class="about">
+    <div class="left">
+        <img src="{{ page.profile-image }}" alt="">
+    </div>
+
+    <div class="right">
+        <article class="bio">
+        {{content}}
+        </article>  
+    </div>
+</main>
+
+<h1>Posts</h1>
+
+<div class="posts">
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <section class="card">
+      <div class="grow">
+        <img src="{{ post.cover-image }}" alt="{{ post.title }}">
+      </div> 
+      <h4>{{ post.title }}</h4> 
+    </section>
+  </a>
+  {% endfor %}
+</div>
+
+{% include footer.html %}
+{% include scripts.html %}
